@@ -24,18 +24,18 @@
             android:name=".auth.LoginActivity"
             android:label="Login"
             android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".auth.RegisterActivity"
             android:label="Register"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
 

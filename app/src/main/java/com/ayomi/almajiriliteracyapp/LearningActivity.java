@@ -16,7 +16,32 @@ import java.io.IOException;
 public class LearningActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-    TextView textViewA, textViewB, textViewC;
+    TextView textViewA,
+            textViewB,
+            textViewC,
+            textViewD,
+            textViewE,
+            textViewF,
+            textViewG,
+            textViewH,
+            textViewI,
+            textViewJ,
+            textViewK,
+            textViewL,
+            textViewM,
+            textViewN,
+            textViewO,
+            textViewP,
+            textViewQ,
+            textViewR,
+            textViewS,
+            textViewT,
+            textViewU,
+            textViewV,
+            textViewW,
+            textViewX,
+            textViewY,
+            textViewZ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +58,29 @@ public class LearningActivity extends AppCompatActivity {
         textViewA = findViewById(R.id.txtAplphabetA);
         textViewB = findViewById(R.id.txtAplphabetB);
         textViewC = findViewById(R.id.txtAplphabetC);
+        textViewD = findViewById(R.id.txtAplphabetD);
+        textViewE = findViewById(R.id.txtAplphabetE);
+        textViewF = findViewById(R.id.txtAplphabetF);
+        textViewG = findViewById(R.id.txtAplphabetG);
+        textViewH = findViewById(R.id.txtAplphabetH);
+        textViewI = findViewById(R.id.txtAplphabetI);
+        textViewJ = findViewById(R.id.txtAplphabetJ);
+        textViewK = findViewById(R.id.txtAplphabetK);
+        textViewL = findViewById(R.id.txtAplphabetL);
+        textViewM = findViewById(R.id.txtAplphabetM);
+        textViewN = findViewById(R.id.txtAplphabetN);
+        textViewO = findViewById(R.id.txtAplphabetO);
+        textViewP = findViewById(R.id.txtAplphabetP);
+        textViewQ = findViewById(R.id.txtAplphabetQ);
+        textViewR = findViewById(R.id.txtAplphabetR);
+        textViewS = findViewById(R.id.txtAplphabetS);
+        textViewT = findViewById(R.id.txtAplphabetT);
+        textViewU = findViewById(R.id.txtAplphabetU);
+        textViewV = findViewById(R.id.txtAplphabetV);
+        textViewW = findViewById(R.id.txtAplphabetW);
+        textViewX = findViewById(R.id.txtAplphabetX);
+        textViewY = findViewById(R.id.txtAplphabetY);
+        textViewZ = findViewById(R.id.txtAplphabetZ);
 
         /*Intent b = getIntent();
         String receivingdata = b.getStringExtra("Key");
@@ -45,13 +93,81 @@ public class LearningActivity extends AppCompatActivity {
 //        textView.setText(b);
 
         Intent intent = getIntent();
-        final String A = intent.getStringExtra("A");
-        final String B = intent.getStringExtra("B");
-        final String C = intent.getStringExtra("C");
-//        final  String imagee = intent.getStringExtra("image");
-//        Picasso.get().load(imagee).into(userProfileImage);
+//        final String A = intent.getStringExtra("A");
+//        final String B = intent.getStringExtra("B");
+//        final String C = intent.getStringExtra("C");
 
-        textViewA.setText(A);
+        if (intent.getExtras() != null) {
+
+//            intent.getExtras().getString("A");
+            String valueA = intent.getExtras().getString("A");
+            String valueB = intent.getExtras().getString("B");
+//            String valueC = intent.getExtras().getString("C");
+//            String valueD = intent.getExtras().getString("D");
+//            String valueE = intent.getExtras().getString("E");
+//            String valueF = intent.getExtras().getString("F");
+//            String valueG = intent.getExtras().getString("G");
+//            String valueH = intent.getExtras().getString("H");
+//            String valueI = intent.getExtras().getString("I");
+//            String valueJ = intent.getExtras().getString("J");
+//            String valueK = intent.getExtras().getString("K");
+//            String valueL = intent.getExtras().getString("L");
+//            String valueM = intent.getExtras().getString("M");
+//            String valueN = intent.getExtras().getString("N");
+//            String valueO = intent.getExtras().getString("O");
+//            String valueP = intent.getExtras().getString("P");
+//            String valueQ = intent.getExtras().getString("Q");
+//            String valueR = intent.getExtras().getString("R");
+//            String valueS = intent.getExtras().getString("S");
+//            String valueT = intent.getExtras().getString("T");
+//            String valueU = intent.getExtras().getString("U");
+//            String valueV = intent.getExtras().getString("V");
+//            String valueW = intent.getExtras().getString("W");
+//            String valueX = intent.getExtras().getString("X");
+//            String valueY = intent.getExtras().getString("Y");
+//            String valueZ = intent.getExtras().getString("Z");
+            textViewA.setText(valueA);
+//            textViewB.setText(valueB);
+//            textViewC.setText(valueC);
+//            textViewD.setText(valueD);
+//            textViewE.setText(valueE);
+//            textViewF.setText(valueF);
+//            textViewG.setText(valueG);
+//            textViewH.setText(valueH);
+//            textViewI.setText(valueI);
+//            textViewJ.setText(valueJ);
+//            textViewK.setText(valueK);
+//            textViewL.setText(valueL);
+//            textViewM.setText(valueM);
+//            textViewN.setText(valueN);
+//            textViewO.setText(valueO);
+//            textViewP.setText(valueP);
+//            textViewQ.setText(valueQ);
+//            textViewR.setText(valueR);
+//            textViewS.setText(valueS);
+//            textViewT.setText(valueT);
+//            textViewU.setText(valueU);
+//            textViewV.setText(valueV);
+//            textViewW.setText(valueW);
+//            textViewX.setText(valueX);
+//            textViewY.setText(valueY);
+//            textViewZ.setText(valueZ);
+
+            if (valueA.equals("A")){
+                textViewA.setText(valueA);
+                textViewA.setVisibility(View.VISIBLE);
+            }
+
+            if (valueB.equals("B")){
+                textViewB.setText(valueB);
+                textViewB.setVisibility(View.VISIBLE);
+            }
+        }
+
+
+
+
+
 //        textViewB.setText(B);
 //        textViewC.setText(C);
 //        userProfileStatus.setText(link);
