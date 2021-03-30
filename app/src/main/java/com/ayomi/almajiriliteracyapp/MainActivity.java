@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -19,6 +20,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    public TextView textA, textB, textC;
     private CircleImageView displayImageView;
 
     @Override
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
 
+        textA = findViewById(R.id.txtA);
+        textB = findViewById(R.id.txtB);
+        textC = findViewById(R.id.txtC);
 
 
     }
@@ -88,7 +93,25 @@ public class MainActivity extends AppCompatActivity {
             };
 
     public void LearningActivity(View view) {
-        startActivity(new Intent(this, LearningActivity.class));
+//        startActivity(new Intent(this, LearningActivity.class));
+
+//        Intent intent = new Intent();
+//        intent.putExtra("TextValue", textA.getText().toString());
+//        intent.putExtra("TextValueB", textB.getText().toString());
+//        intent.setClass(MainActivity.this, LearningActivity.class);
+//        startActivity(intent);
+
+
+
+        Intent intent = new Intent(MainActivity.this, LearningActivity.class);
+//                        intent.putExtra("model", (Serializable) model);
+//        intent.putExtra("gender", model.getGender());
+        intent.putExtra("A", textA.getText());
+        intent.putExtra("B", textB.getText());
+        intent.putExtra("C", textC.getText());
+
+        startActivity(intent);
+
     }
 
 /*

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "867837341838",
+    "project_id": "almajiriliteracyapp",
+    "storage_bucket": "almajiriliteracyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867837341838:android:28c63af58f057c5f4759df",
+        "android_client_info": {
+          "package_name": "com.ayomi.almajiriliteracyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867837341838-nlpjmhlfd3th5saadb4sidau4nqhls1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQkCaE6yemGZ4Nutty1uuvxcIPiHd4ERI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867837341838-nlpjmhlfd3th5saadb4sidau4nqhls1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

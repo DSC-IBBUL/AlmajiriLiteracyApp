@@ -217,6 +217,7 @@
                     android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/txtA"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="2"
@@ -286,6 +287,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/txtB"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2"
@@ -365,6 +367,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/txtC"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2"

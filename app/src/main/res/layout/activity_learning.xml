@@ -36,7 +36,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_gravity="center"
@@ -45,19 +45,45 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/txtAplphabetA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:background="@drawable/cardview2_style"
+                    android:background="@android:color/transparent"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="Aa"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="100sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtAplphabetB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="100sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAplphabetC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
                     android:textColor="@color/black"
                     android:textSize="100sp"
                     android:textStyle="bold" />
 
 
-            </LinearLayout>
+            </RelativeLayout>
 
 
             <LinearLayout
@@ -91,6 +117,7 @@
                         android:layout_height="40dp"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="PlayLetter"
                         android:layout_marginEnd="15dp"
                         android:background="@android:color/transparent"
                         android:scaleType="fitXY"
