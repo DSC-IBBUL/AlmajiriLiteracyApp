@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -42,6 +43,7 @@ public class LearningActivity extends AppCompatActivity {
             textViewX,
             textViewY,
             textViewZ;
+    String value;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,15 +95,15 @@ public class LearningActivity extends AppCompatActivity {
 //        textView.setText(b);
 
         Intent intent = getIntent();
-//        final String A = intent.getStringExtra("A");
+        final String layoutetterA = intent.getStringExtra("a");
 //        final String B = intent.getStringExtra("B");
 //        final String C = intent.getStringExtra("C");
 
         if (intent.getExtras() != null) {
 
 //            intent.getExtras().getString("A");
-            String valueA = intent.getExtras().getString("A");
-            String valueB = intent.getExtras().getString("B");
+             value = intent.getExtras().getString("letter");
+//            String valueB = intent.getExtras().getString("B");
 //            String valueC = intent.getExtras().getString("C");
 //            String valueD = intent.getExtras().getString("D");
 //            String valueE = intent.getExtras().getString("E");
@@ -126,7 +128,7 @@ public class LearningActivity extends AppCompatActivity {
 //            String valueX = intent.getExtras().getString("X");
 //            String valueY = intent.getExtras().getString("Y");
 //            String valueZ = intent.getExtras().getString("Z");
-            textViewA.setText(valueA);
+            textViewA.setText(value);
 //            textViewB.setText(valueB);
 //            textViewC.setText(valueC);
 //            textViewD.setText(valueD);
@@ -153,15 +155,6 @@ public class LearningActivity extends AppCompatActivity {
 //            textViewY.setText(valueY);
 //            textViewZ.setText(valueZ);
 
-            if (valueA.equals("A")){
-                textViewA.setText(valueA);
-                textViewA.setVisibility(View.VISIBLE);
-            }
-
-            if (valueB.equals("B")){
-                textViewB.setText(valueB);
-                textViewB.setVisibility(View.VISIBLE);
-            }
         }
 
 
@@ -173,16 +166,15 @@ public class LearningActivity extends AppCompatActivity {
 //        userProfileStatus.setText(link);
     }
 
-    void PlayAudio(String s)
+    void PlayAudio(String fileName)
     {
         MediaPlayer mediaPlayer = new MediaPlayer();
         AssetFileDescriptor afd;
         try {
-            afd = getAssets().openFd("sounds/a.mp3");
-            mediaPlayer.setDataSource(afd.getFileDescriptor());
+            afd = getAssets().openFd("sounds/"+fileName+".mp3");
+            mediaPlayer.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
             mediaPlayer.prepare();
             mediaPlayer.start();
-//            Toast.makeText(LearningActivity.this, "Playing audio from Asset directory",  Toast.LENGTH_SHORT).show();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -190,6 +182,7 @@ public class LearningActivity extends AppCompatActivity {
     }
 
     public void PlayLetter(View view) {
-        PlayAudio("a.mp3");
+        String letter = value.substring(1);
+        PlayAudio(letter);
     }
 }

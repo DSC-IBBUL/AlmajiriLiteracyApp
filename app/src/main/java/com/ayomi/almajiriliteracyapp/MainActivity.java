@@ -142,62 +142,115 @@ public class MainActivity extends AppCompatActivity {
                 }
             };
 
-    public void LearningActivity(View view) {
-//        startActivity(new Intent(this, LearningActivity.class));
-
-//        Intent intent = new Intent();
-//        intent.putExtra("TextValue", textA.getText().toString());
-//        intent.putExtra("TextValueB", textB.getText().toString());
-//        intent.setClass(MainActivity.this, LearningActivity.class);
-//        startActivity(intent);
-
-
-
+    public void LearningActivity(String letter) {
         Intent intent = new Intent(MainActivity.this, LearningActivity.class);
-//                        intent.putExtra("model", (Serializable) model);
-//        intent.putExtra("gender", model.getGender());
-        intent.putExtra("A", textA.getText().toString());
-        intent.putExtra("B", textB.getText().toString());
-        intent.putExtra("C", textC.getText().toString());
-        intent.putExtra("D", textD.getText().toString());
-        intent.putExtra("E", textE.getText().toString());
-        intent.putExtra("F", textF.getText().toString());
-        intent.putExtra("G", textG.getText().toString());
-        intent.putExtra("H", textH.getText().toString());
-        intent.putExtra("I", textI.getText().toString());
-        intent.putExtra("J", textJ.getText().toString());
-        intent.putExtra("K", textK.getText().toString());
-        intent.putExtra("L", textL.getText().toString());
-        intent.putExtra("M", textM.getText().toString());
-        intent.putExtra("N", textN.getText().toString());
-        intent.putExtra("O", textO.getText().toString());
-        intent.putExtra("P", textP.getText().toString());
-        intent.putExtra("Q", textQ.getText().toString());
-        intent.putExtra("R", textR.getText().toString());
-        intent.putExtra("S", textS.getText().toString());
-        intent.putExtra("T", textT.getText().toString());
-        intent.putExtra("U", textU.getText().toString());
-        intent.putExtra("V", textV.getText().toString());
-        intent.putExtra("W", textW.getText().toString());
-        intent.putExtra("X", textX.getText().toString());
-        intent.putExtra("Y", textY.getText().toString());
-        intent.putExtra("Z", textZ.getText().toString());
-
+        intent.putExtra("letter", letter);
         startActivity(intent);
-
     }
 
-/*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.bottom_navigation_menu, menu);
+    public void LearningActivityA(View view) {
+        LearningActivity(textA.getText().toString());
+    }
 
+    public void LearningActivityB(View view) {
+        LearningActivity(textB.getText().toString());
+    }
 
-        super.onCreateOptionsMenu(menu);
+    public void LearningActivityC(View view) {
+        LearningActivity(textC.getText().toString());
+    }
 
-        return true;
-    }*/
+    public void LearningActivityD(View view) {
+        LearningActivity(textD.getText().toString());
+    }
 
+    public void LearningActivityE(View view) {
+        LearningActivity(textE.getText().toString());
+    }
+
+    public void LearningActivityF(View view) {
+        LearningActivity(textF.getText().toString());
+    }
+
+    public void LearningActivityG(View view) {
+        LearningActivity(textG.getText().toString());
+    }
+
+    public void LearningActivityH(View view) {
+        LearningActivity(textH.getText().toString());
+    }
+
+    public void LearningActivityI(View view) {
+        LearningActivity(textI.getText().toString());
+    }
+
+    public void LearningActivityJ(View view) {
+        LearningActivity(textJ.getText().toString());
+    }
+
+    public void LearningActivityK(View view) {
+        LearningActivity(textK.getText().toString());
+    }
+
+    public void LearningActivityL(View view) {
+        LearningActivity(textL.getText().toString());
+    }
+
+    public void LearningActivityM(View view) {
+        LearningActivity(textM.getText().toString());
+    }
+
+    public void LearningActivityN(View view) {
+        LearningActivity(textN.getText().toString());
+    }
+
+    public void LearningActivityO(View view) {
+        LearningActivity(textO.getText().toString());
+    }
+
+    public void LearningActivityP(View view) {
+        LearningActivity(textP.getText().toString());
+    }
+
+    public void LearningActivityQ(View view) {
+        LearningActivity(textQ.getText().toString());
+    }
+
+    public void LearningActivityR(View view) {
+        LearningActivity(textR.getText().toString());
+    }
+
+    public void LearningActivityS(View view) {
+        LearningActivity(textS.getText().toString());
+    }
+
+    public void LearningActivityT(View view) {
+        LearningActivity(textT.getText().toString());
+    }
+
+    public void LearningActivityU(View view) {
+        LearningActivity(textU.getText().toString());
+    }
+
+    public void LearningActivityV(View view) {
+        LearningActivity(textV.getText().toString());
+    }
+
+    public void LearningActivityW(View view) {
+        LearningActivity(textW.getText().toString());
+    }
+
+    public void LearningActivityX(View view) {
+        LearningActivity(textX.getText().toString());
+    }
+
+    public void LearningActivityY(View view) {
+        LearningActivity(textY.getText().toString());
+    }
+
+    public void LearningActivityZ(View view) {
+        LearningActivity(textZ.getText().toString());
+    }
 
 
 }
