@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Almajiri Literacy App</string>
+    <string name="app_name">Muyi Karatu</string>
+    <string name="let_s_read">(Let\'s Read)</string>
+    <string name="learn_the_basics_of_english">Learn the basics of English</string>
 </resources>

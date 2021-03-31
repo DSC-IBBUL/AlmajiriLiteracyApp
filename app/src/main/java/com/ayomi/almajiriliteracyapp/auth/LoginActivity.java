@@ -44,8 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowCustomEnabled(true);
+
 
 
         loginEmail = findViewById(R.id.edtUsername);
@@ -112,27 +111,5 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
     }
-/*
-//    public final class PlayerExample {
-        MediaPlayer mediaPlayer = new MediaPlayer();
 
-        public void playSound(Context context, String fileName) {
-            try {
-                AssetFileDescriptor descriptor = context.getAssets().openFd(fileName);
-                mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
-                descriptor.close();
-                mediaPlayer.prepare();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            mediaPlayer.start();
-        }
-//    }*/
-
-
-
-
-//    public void Login(View view) {
-//        startActivity(new Intent(this, MainActivity.class));
-//    }
 }
