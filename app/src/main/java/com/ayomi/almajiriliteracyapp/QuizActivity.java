@@ -6,7 +6,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 
 public class QuizActivity extends AppCompatActivity {
@@ -27,13 +29,17 @@ public class QuizActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowCustomEnabled(true);
 
-        recyclerView = findViewById(R.id.recyclerView);
+//        recyclerView = findViewById(R.id.recyclerView);
 
 
-        customAdapter = new CustomAdapter();
-        recyclerView.setAdapter(customAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        customAdapter = new CustomAdapter();
+//        recyclerView.setAdapter(customAdapter);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
+    }
+
+    public void QuizTest(View view) {
+        startActivity(new Intent(this, QuizTestActivity.class));
     }
 }

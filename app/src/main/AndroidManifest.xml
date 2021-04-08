@@ -6,17 +6,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon1"
         android:hardwareAccelerated="false"
-        android:largeHeap="true"
+        android:icon="@drawable/icon1"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@drawable/icon1"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlmajiriLiteracyApp">
-        <activity android:name=".QuizActivity"
-            android:label="Take Quiz">
+        <activity android:name=".QuizTestActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Quiz Test">
 
         </activity>
+        <activity
+            android:name=".QuizActivity"
+            android:label="Take Quiz"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".LearningActivity"
             android:label="Learn Your Alphabets"
@@ -24,9 +29,7 @@
         <activity
             android:name=".auth.LoginActivity"
             android:label="Login"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".auth.RegisterActivity"
             android:label="Register"
