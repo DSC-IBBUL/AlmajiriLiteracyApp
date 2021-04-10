@@ -1,4 +1,4 @@
-package com.ayomi.almajiriliteracyapp;
+package com.ayomi.almajiriliteracyapp.activities;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.ayomi.almajiriliteracyapp.R;
 
 import java.io.IOException;
 

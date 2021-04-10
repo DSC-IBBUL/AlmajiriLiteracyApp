@@ -13,35 +13,35 @@
         android:roundIcon="@drawable/icon1"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlmajiriLiteracyApp">
-        <activity android:name=".QuizTestActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="Quiz Test">
+        <activity android:name=".activities.ProfileActivity"
+            android:label="Profile"
+            android:parentActivityName=".activities.MainActivity">
 
         </activity>
         <activity
-            android:name=".QuizActivity"
-            android:label="Take Quiz"
-            android:parentActivityName=".MainActivity"></activity>
+            android:name=".activities.QuizTestActivity"
+            android:label="Quiz Test"
+            android:parentActivityName=".activities.MainActivity" />
         <activity
-            android:name=".LearningActivity"
+            android:name=".activities.LearningActivity"
             android:label="Learn Your Alphabets"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".activities.MainActivity" />
         <activity
             android:name=".auth.LoginActivity"
             android:label="Login"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".activities.MainActivity" />
         <activity
             android:name=".auth.RegisterActivity"
             android:label="Register"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".SplashActivity">
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activities.MainActivity" />
     </application>
 
 </manifest>

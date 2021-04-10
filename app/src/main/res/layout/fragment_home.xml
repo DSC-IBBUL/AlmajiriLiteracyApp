@@ -1,0 +1,2091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="serif"
+        android:text="Welcome!"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="Abdullahi"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="Learn something new today"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <androidx.cardview.widget.CardView
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_style"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="A - Z"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="26 Letters"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtA"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Aa"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityA"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                app:drawableEndCompat="@drawable/ic_arrow_right_alt" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtB"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Bb"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityB"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtC"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Cc"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityC"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtD"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Dd"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityD"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtE"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Ee"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityE"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:id="@+id/txtF"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Ff"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityF"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtG"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Gg"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityG"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtH"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Hh"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityH"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtI"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Ii"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityI"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtJ"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Jj"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityJ"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtK"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Kk"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityK"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtL"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Ll"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityL"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtM"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Mm"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityM"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtN"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Nn"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityN"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtO"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Oo"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityO"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtP"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Pp"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityP"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtQ"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Qq"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityQ"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtR"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Rr"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityR"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtS"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Ss"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityS"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtT"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Tt"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityT"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtU"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Uu"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityU"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtV"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Vv"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityV"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtW"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Ww"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityW"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Xx"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityX"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtY"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Yy"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityY"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cardview2_style"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtZ"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:background="@drawable/cardview2_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Zz"
+                            android:textColor="@color/custom_text_color"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:drawableEnd="@drawable/ic_arrow_right_alt"
+                                android:gravity="bottom"
+                                android:id="@+id/learningActivityZ"
+                                android:padding="5dp"
+                                android:text="Start Learning"
+                                android:textColor="@color/custom_text_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="bottom"
+                                android:text="Take Quiz"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

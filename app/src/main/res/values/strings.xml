@@ -2,4 +2,6 @@
     <string name="app_name">Muyi Karatu</string>
     <string name="let_s_read">(Let\'s Read)</string>
     <string name="learn_the_basics_of_english">Learn the basics of English</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

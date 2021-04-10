@@ -4,15 +4,18 @@
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:title="Home"/>
+
+
     <item
         android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_book"
+        android:title="Quiz"/>
+    <item
+        android:id="@+id/page_3"
         android:enabled="true"
         android:icon="@drawable/ic_reward"
         android:title="Reward"/>
 
-    <item
-        android:id="@+id/page_3"
-        android:enabled="true"
-        android:icon="@drawable/ic_baseline_person_24"
-        android:title="Profile"/>
+
 </menu>
